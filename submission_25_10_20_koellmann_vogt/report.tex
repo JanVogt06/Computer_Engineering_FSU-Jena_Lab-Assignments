@@ -1,73 +1,132 @@
-\documentclass{article}
+\documentclass[a4paper,11pt]{article}
 \usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
+\usepackage{geometry}
+\geometry{margin=1.5cm}
+
+\title{Computer Engineering -- Submission due 25.10.2020}
+\author{}
+\date{\today}
 
 \begin{document}
-Output Person 1:
+
+\maketitle
+
+\section{Data Encodings}
+
+\subsection{Remote Access}
+
+\textbf{Tasks}
+
+\begin{enumerate}
+\item Run the three commands \texttt{whoami}, \texttt{hostname}, and \texttt{lscpu} on one of the systems.
+
+\textbf{whoami - Benutzerinformationen}
+
+\textbf{Person 1:}
+\begin{verbatim}
 ce42@elaine00:~$ whoami
 ce42
+\end{verbatim}
 
-Output Person 2:
+\textbf{Person 2:}
+\begin{verbatim}
 ce43@elaine00:~$ whoami
 ce43
+\end{verbatim}
 
+\textbf{hostname - Rechnername}
+
+\begin{verbatim}
 ce42@elaine00:~$ hostname
 elaine00
+\end{verbatim}
 
-ce42@elaine00:~$ lscpu
-Architecture:             x86_64
-  CPU op-mode(s):         32-bit, 64-bit
-  Address sizes:          48 bits physical, 48 bits virtual
-  Byte Order:             Little Endian
-CPU(s):                   24
-  On-line CPU(s) list:    0-23
-Vendor ID:                AuthenticAMD
-  Model name:             AMD RYZEN AI MAX PRO 390 w/ Radeon 8050S
-    CPU family:           26
-    Model:                112
-    Thread(s) per core:   2
-    Core(s) per socket:   12
-    Socket(s):            1
-    Stepping:             0
-    Frequency boost:      enabled
-    CPU(s) scaling MHz:   47%
-    CPU max MHz:          5057.0000
-    CPU min MHz:          599.0000
-    BogoMIPS:             6388.29
-    Flags:                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdt
-                          scp lm constant_tsc rep_good amd_lbr_v2 nopl xtopology nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 s
-                          se4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs 
-                          skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba perfmon_v2 ibrs ibpb stibp ibr
-                          s_enhanced vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt cl
-                          wb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local user_shstk avx_vnni a
-                          vx512_bf16 clzero irperf xsaveerptr rdpru wbnoinvd cppc arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pau
-                          sefilter pfthreshold avic v_vmsave_vmload vgif x2avic v_spec_ctrl vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_v
-                          nni avx512_bitalg avx512_vpopcntdq rdpid bus_lock_detect movdiri movdir64b overflow_recov succor smca fsrm avx512_vp2intersect flush_l1d am
-                          d_lbr_pmc_freeze
-Virtualization features:  
-  Virtualization:         AMD-V
-Caches (sum of all):      
-  L1d:                    576 KiB (12 instances)
-  L1i:                    384 KiB (12 instances)
-  L2:                     12 MiB (12 instances)
-  L3:                     64 MiB (2 instances)
-NUMA:                     
-  NUMA node(s):           1
-  NUMA node0 CPU(s):      0-23
-Vulnerabilities:          
-  Gather data sampling:   Not affected
-  Ghostwrite:             Not affected
-  Itlb multihit:          Not affected
-  L1tf:                   Not affected
-  Mds:                    Not affected
-  Meltdown:               Not affected
-  Mmio stale data:        Not affected
-  Reg file data sampling: Not affected
-  Retbleed:               Not affected
-  Spec rstack overflow:   Mitigation; IBPB on VMEXIT only
-  Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
-  Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
-  Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
-  Srbds:                  Not affected
-  Tsx async abort:        Not affected
+\textbf{lscpu - CPU-Informationen}
+
+\begin{verbatim}
+ce42@elaine00:~$ (lscpu | head -n 5; echo "---"; lscpu | tail -n 5)
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        48 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               24
+---
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
+\end{verbatim}
+
+\item Print the contents of the file \texttt{welcome.txt} in your home directory.
+
+\textbf{Inhalt von welcome.txt:}
+\begin{verbatim}
+Welcome to the Computer Engineering class! My waveform told a long story and 
+ended with 'It works.'
+\end{verbatim}
+
+\end{enumerate}
+
+\subsection{C/C++ Data Types}
+
+\textbf{Tasks}
+
+\begin{enumerate}
+\item Write C/C++ code to print the binary representations of the following variables. \begin{verbatim}(view ./src)\end{verbatim}
+\item For each of the variables, briefly explain why you obtained the resulting bits! (Siehe Erklärungen oben)
+
+\textbf{Binäre Repräsentationen:}
+
+\noindent
+\textbf{1: 1:} \texttt{00000001} -- Dezimalwert 1.
+
+\noindent
+\textbf{2: 255:} \texttt{11111111} -- Maximalwert für 8-bit unsigned char ($2^8 - 1$).
+
+\noindent
+\textbf{3: 255 + 1:} \texttt{00000000} -- Integer Overflow: 9. Bit wird abgeschnitten.
+
+\noindent
+\textbf{4: 0xA1:} \texttt{10100001} -- Hexadezimal: A = 1010, 1 = 0001.
+
+\noindent
+\textbf{5: 0b1001011:} \texttt{01001011} -- Binärliteral auf 8 Bits aufgefüllt.
+
+\noindent
+\textbf{6: 'H':} \texttt{01001000} -- ASCII-Wert 72.
+
+\noindent
+\textbf{7: -4:} \texttt{11111100} -- Zweierkomplement: +4 invertieren und +1.
+
+\noindent
+\textbf{8: 1u << 11:} \texttt{00000000000000000000100000000000} -- Linksshift der 1 (unsigned integer) um 11 Positionen ($2^{11}$).
+
+\noindent
+\textbf{9: l\_data8 << 21:} \texttt{00000000000000000000000000000000} -- Overflow: Bit auf Position 32.
+
+\noindent
+\textbf{10: 0xFFFFFFFF >> 5:} \texttt{00000111111111111111111111111111} -- Hexadezimalzahl - alle Bits sind 1. Rechtsshift um 5, linke Bits werden 0.
+
+\noindent
+\textbf{11: 0b1001 \^{} 0b01111:} \texttt{00000000000000000000000000000110} -- XOR: 01001 \^{} 01111 = 00110.
+
+\noindent
+\textbf{12: \~{}0b1001:} \texttt{11111111111111111111111111110110} -- NOT invertiert alle 32 Bits.
+
+\noindent
+\textbf{13: 0xF0 \& 0b1010101:} \texttt{00000000000000000000000001010000} -- AND: 11110000 \& 01010101 = 01010000.
+
+\noindent
+\textbf{14: 0b001 | 0b101:} \texttt{00000000000000000000000000000101} -- OR: 001 | 101 = 101.
+
+\noindent
+\textbf{15: 7743:} \texttt{00000000000000000001111000111111} -- Dezimal zu Binär.
+
+\noindent
+\textbf{16: -7743:} \texttt{11111111111111111110000111000001} -- Zweierkomplement: invertieren und +1.
+\end{enumerate}
+
 \end{document}
