@@ -1,0 +1,208 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.17)  16 OCT 2025 16:56
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/janvogt/Desktop/Softwareprojekte/Computer_Engineering_FSU-Jena_Lab-Assignments/submission_25_10_20_koellmann_vogt/report.tex
+(/Users/janvogt/Desktop/Softwareprojekte/Computer_Engineering_FSU-Jena_Lab-Assignments/submission_25_10_20_koellmann_vogt/report.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count196
+\c@section=\count197
+\c@subsection=\count198
+\c@subsubsection=\count199
+\c@paragraph=\count266
+\c@subparagraph=\count267
+\c@figure=\count268
+\c@table=\count269
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2025/02/14 v25.4 The multilingual framework for pdfLaTeX, LuaLaTeX and XeLaTeX
+\babel@savecnt=\count270
+\U@D=\dimen142
+\l@unhyphenated=\language90
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count271
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/babel-german/ngerman.ldf
+Language: ngerman 2024/12/10 v2.15 German support for babel (post-1996 orthography)
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/babel-german/ngermanb.ldf
+Language: ngermanb 2024/12/10 v2.15 German support for babel (post-1996 orthography)
+Package babel Info: Making " an active character on input line 122.
+))) (/usr/local/texlive/2025/texmf-dist/tex/generic/babel/locale/de/babel-ngerman.tex
+Package babel Info: Importing font and identification data for ngerman
+(babel)             from babel-de.ini. Reported on input line 11.
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count272
+\l__pdf_internal_box=\box52
+)
+No file report.aux.
+\openout1 = `report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 7.
+/Users/janvogt/Desktop/Softwareprojekte/Computer_Engineering_FSU-Jena_Lab-Assignments/submission_25_10_20_koellmann_vogt/report.tex:9: Missing $ inserted.
+<inserted text> 
+                $
+l.9 
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/janvogt/Desktop/Softwareprojekte/Computer_Engineering_FSU-Jena_Lab-Assignments/submission_25_10_20_koellmann_vogt/report.tex:13: Missing $ inserted.
+<inserted text> 
+                $
+l.13 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/janvogt/Desktop/Softwareprojekte/Computer_Engineering_FSU-Jena_Lab-Assignments/submission_25_10_20_koellmann_vogt/report.tex:16: Missing $ inserted.
+<inserted text> 
+                $
+l.16 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/janvogt/Desktop/Softwareprojekte/Computer_Engineering_FSU-Jena_Lab-Assignments/submission_25_10_20_koellmann_vogt/report.tex:69: Missing { inserted.
+<to be read again> 
+                   _
+l.69 ...itigation; usercopy/swapgs barriers and __
+                                                  user pointer sanitization
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+/Users/janvogt/Desktop/Softwareprojekte/Computer_Engineering_FSU-Jena_Lab-Assignments/submission_25_10_20_koellmann_vogt/report.tex:73: Missing $ inserted.
+<inserted text> 
+                $
+l.73 \end{document}
+                   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/janvogt/Desktop/Softwareprojekte/Computer_Engineering_FSU-Jena_Lab-Assignments/submission_25_10_20_koellmann_vogt/report.tex:73: Missing } inserted.
+<inserted text> 
+                }
+l.73 \end{document}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (16.83061pt too wide) in paragraph at lines 17--73
+\OML/cmm/m/it/10 bitAddresssizes \OT1/cmr/m/n/10 : 48\OML/cmm/m/it/10 bitsphysical; \OT1/cmr/m/n/10 48\OML/cmm/m/it/10 bitsvirtualByteOrder \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 LittleEndianCPU\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (83.31227pt too wide) in paragraph at lines 17--73
+\OML/cmm/m/it/10 AMDRYZENAIMAXPRO\OT1/cmr/m/n/10 390\OML/cmm/m/it/10 w=Radeon\OT1/cmr/m/n/10 8050\OML/cmm/m/it/10 SCPUfamily \OT1/cmr/m/n/10 : 26\OML/cmm/m/it/10 Model \OT1/cmr/m/n/10 : 112\OML/cmm/m/it/10 Thread\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 percore \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (74.1294pt too wide) in paragraph at lines 17--73
+\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 Core\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 persocket \OT1/cmr/m/n/10 : 12\OML/cmm/m/it/10 Socket\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 ) : 1\OML/cmm/m/it/10 Stepping \OT1/cmr/m/n/10 : 0\OML/cmm/m/it/10 Frequencyboost \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 enabledCPU\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 scalingMHz \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (23.59186pt too wide) in paragraph at lines 17--73
+\OT1/cmr/m/n/10 47\OML/cmm/m/it/10 CPUmaxMHz \OT1/cmr/m/n/10 : 5057\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0000\OML/cmm/m/it/10 CPUminMHz \OT1/cmr/m/n/10 : 599\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0000\OML/cmm/m/it/10 BogoMIPS \OT1/cmr/m/n/10 : 6388\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 29\OML/cmm/m/it/10 Flags \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (5002.33292pt too wide) in paragraph at lines 17--73
+\OML/cmm/m/it/10 fpuvmedepsetscmsrpaemcecx\OT1/cmr/m/n/10 8\OML/cmm/m/it/10 apicsepmtrrpgemcacmovpatpse\OT1/cmr/m/n/10 36\OML/cmm/m/it/10 clflushmmxfxsrssesse\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 htsyscallnxmmxextfxsr[]ptpdpe\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 gbrdtscplmconstant[]screp[]oodamd[]br[]\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 noplxtopologynonstop[]sccpuidextd[]picidaperfmperfraplpnipclmulqdqmonitorssse\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 fmacx\OT1/cmr/m/n/10 16\OML/cmm/m/it/10 sse\OT1/cmr/m/n/10 4[]\OML/cmm/m/it/10 sse\OT1/cmr/m/n/10 4[]\OML/cmm/m/it/10 movbepopcntaesxsaveavxf\OT1/cmr/m/n/10 16\OML/cmm/m/it/10 crdrandlahf[]mcmp[]egacysvmextapiccr\OT1/cmr/m/n/10 8[]\OML/cmm/m/it/10 egacyabmsse\OT1/cmr/m/n/10 4\OML/cmm/m/it/10 amisalignsse\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 dnowprefetchosvwibsskinitwdttcetopoextperfctr[]oreperfctr[]bbpextperfctr[]lcmwaitxcpbcat[]\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 cdp[]\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 hw[]statessbdmbaperfmon[]\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ibrsibpbstibpibrs[]nhancedvmmcallfsgsbasetsc[]djustbmi\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 avx\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 smepbmi\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ermsinvpcidcqmrdt[]avx\OT1/cmr/m/n/10 512\OML/cmm/m/it/10 favx\OT1/cmr/m/n/10 512\OML/cmm/m/it/10 dqrdseedadxsmapavx\OT1/cmr/m/n/10 512\OML/cmm/m/it/10 ifmaclflushoptclwbavx\OT1/cmr/m/n/10 512\OML/cmm/m/it/10 cdsha[]iavx\OT1/cmr/m/n/10 512\OML/cmm/m/it/10 bwavx\OT1/cmr/m/n/10 512\OML/cmm/m/it/10 vlxsaveoptxsavecxgetbv\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 xsavescqm[]lccqm[]ccup[]lccqm[]bm[]otalcqm[]bm[]ocaluser[]hstkavx[]nniavx\OT1/cmr/m/n/10 512[]\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 16\OML/cmm/m/it/10 clzeroirperfxsaveerptrrdpruwbnoinvdcppcaratnptlbrvsvm[]ocknrip[]avetsc[]calevmcb[]leanflushbyasiddecodeassistspausefilterpfthresholdavicv[]msave[]mloadvgifx\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 avicv[]pec[]trlvnmiavx\OT1/cmr/m/n/10 512\OML/cmm/m/it/10 vbmiumippkuospkeavx\OT1/cmr/m/n/10 512[]\OML/cmm/m/it/10 bmi\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 gfnivaesvpclmulqdqavx\OT1/cmr/m/n/10 512[]\OML/cmm/m/it/10 nniavx\OT1/cmr/m/n/10 512[]\OML/cmm/m/it/10 italgavx\OT1/cmr/m/n/10 512[]\OML/cmm/m/it/10 popcntdqrdpidbus[]ock[]etectmovdirimovdir\OT1/cmr/m/n/10 64\OML/cmm/m/it/10 boverflow[]ecovsuccorsmcafsrmavx\OT1/cmr/m/n/10 512[]\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 intersectflush[]\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 damd[]br[]mc[]reezeVirtualizationfeatures \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (4.55923pt too wide) in paragraph at lines 17--73
+\OML/cmm/m/it/10 Virtualization \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 AMD \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 VCaches\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 sumofall\OT1/cmr/m/n/10 ) : \OML/cmm/m/it/10 L\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 d \OT1/cmr/m/n/10 : 576\OML/cmm/m/it/10 KiB\OT1/cmr/m/n/10 (12\OML/cmm/m/it/10 instances\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 L\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 i \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (13.00577pt too wide) in paragraph at lines 17--73
+\OT1/cmr/m/n/10 384\OML/cmm/m/it/10 KiB\OT1/cmr/m/n/10 (12\OML/cmm/m/it/10 instances\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 L\OT1/cmr/m/n/10 2 : 12\OML/cmm/m/it/10 MiB\OT1/cmr/m/n/10 (12\OML/cmm/m/it/10 instances\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 L\OT1/cmr/m/n/10 3 : 64\OML/cmm/m/it/10 MiB\OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 instances\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 NUMA \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (40.29674pt too wide) in paragraph at lines 17--73
+\OML/cmm/m/it/10 NUMAnode\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 ) : 1\OML/cmm/m/it/10 NUMAnode\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 CPU\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 ) : 0 \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 23\OML/cmm/m/it/10 Vulnerabilities \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 Gatherdatasampling \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (61.23055pt too wide) in paragraph at lines 17--73
+\OML/cmm/m/it/10 NotaffectedGhostwrite \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 NotaffectedItlbmultihit \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 NotaffectedL\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 tf \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 NotaffectedMds \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (59.06499pt too wide) in paragraph at lines 17--73
+\OML/cmm/m/it/10 NotaffectedMeltdown \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 NotaffectedMmiostaledata \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 NotaffectedRegfiledatasampling \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (153.77203pt too wide) in paragraph at lines 17--73
+\OML/cmm/m/it/10 NotaffectedRetbleed \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 NotaffectedSpecrstackoverflow \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 Mitigation\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 IBPBonVMEXITonlySpecstorebypass \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (924.1755pt too wide) in paragraph at lines 17--73
+\OML/cmm/m/it/10 Mitigation\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 SpeculativeStoreBypassdisabledviaprctlSpectrev\OT1/cmr/m/n/10 1 : \OML/cmm/m/it/10 Mitigation\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 usercopy=swapgsbarriersand[]$ 
+ []
+
+
+
+[1
+
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] (./report.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 1784 strings out of 473190
+ 31002 string characters out of 5715800
+ 438570 words of memory out of 5000000
+ 25095 multiletter control sequences out of 15000+600000
+ 559600 words of font info for 37 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 43i,5n,52p,299b,131s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on report.pdf (1 page, 100363 bytes).
+PDF statistics:
+ 49 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
