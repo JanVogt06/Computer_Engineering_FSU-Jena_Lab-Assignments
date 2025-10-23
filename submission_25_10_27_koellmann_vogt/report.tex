@@ -243,4 +243,81 @@
         \begin{verbatim}(siehe ./src)\end{verbatim}
     \end{enumerate}
 
+    \subsection{Timing Analysis}
+
+    \textbf{Tasks}
+
+    \begin{enumerate}
+        \item For each circuit in Fig. 2.5.1, derive the contamination delay $t_{cd}$.
+
+        \textbf{Kontaminationsverzögerungen:}
+
+        Die Kontaminationsverzögerung $t_{cd}$ ist die minimale Zeit, die ein Signal benötigt, um vom Eingang zum Ausgang zu propagieren (kürzester Pfad).
+
+        \noindent
+        \textbf{First Circuit:}
+
+        Kürzester Pfad: AND $\rightarrow$ OR
+        \begin{align*}
+            t_{cd,1} &= t_{cd,AND} + t_{cd,OR} \\
+            &= 25\,\text{ps} + 30\,\text{ps} \\
+            &= 55\,\text{ps}
+        \end{align*}
+
+        \noindent
+        \textbf{Second Circuit:}
+
+        Kürzester Pfad: NOR $\rightarrow$ NOR
+        \begin{align*}
+            t_{cd,2} &= t_{cd,NOR} + t_{cd,NOR} \\
+            &= 25\,\text{ps} + 25\,\text{ps} \\
+            &= 50\,\text{ps}
+        \end{align*}
+
+        \noindent
+        \textbf{Third Circuit:}
+
+        Kürzester Pfad: NOR $\rightarrow$ NOR $\rightarrow$ NOR
+        \begin{align*}
+            t_{cd,3} &= t_{cd,NOR} + t_{cd,NOR} + t_{cd,NOR} \\
+            &= 25\,\text{ps} + 25\,\text{ps} + 25\,\text{ps} \\
+            &= 75\,\text{ps}
+        \end{align*}
+
+        \item For each circuit in Fig. 2.5.1, derive the propagation delay $t_{pd}$.
+
+        \textbf{Propagationsverzögerungen:}
+
+        Die Propagationsverzögerung $t_{pd}$ ist die maximale Zeit, die ein Signal benötigt, um vom Eingang zum Ausgang zu propagieren (längster Pfad).
+
+        \noindent
+        \textbf{First Circuit:}
+
+        Längster Pfad: NOT $\rightarrow$ AND $\rightarrow$ OR
+        \begin{align*}
+            t_{pd,1} &= t_{pd,NOT} + t_{pd,AND} + t_{pd,OR} \\
+            &= 15\,\text{ps} + 30\,\text{ps} + 40\,\text{ps} \\
+            &= 85\,\text{ps}
+        \end{align*}
+
+        \noindent
+        \textbf{Second Circuit:}
+
+        Längster Pfad: NOR $\rightarrow$ NOR $\rightarrow$ NOR
+        \begin{align*}
+            t_{pd,2} &= t_{pd,NOR} + t_{pd,NOR} + t_{pd,NOR} \\
+            &= 30\,\text{ps} + 30\,\text{ps} + 30\,\text{ps} \\
+            &= 90\,\text{ps}
+        \end{align*}
+
+        \noindent
+        \textbf{Third Circuit:}
+
+        Längster Pfad: NOR $\rightarrow$ NOR $\rightarrow$ NOR $\rightarrow$ NOR
+        \begin{align*}
+            t_{pd,3} &= t_{pd,NOR} + t_{pd,NOR} + t_{pd,NOR} + t_{pd,NOR} \\
+            &= 30\,\text{ps} + 30\,\text{ps} + 30\,\text{ps} + 30\,\text{ps} \\
+            &= 120\,\text{ps}
+        \end{align*}
+    \end{enumerate}
 \end{document}
