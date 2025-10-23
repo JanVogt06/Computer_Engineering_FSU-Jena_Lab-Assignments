@@ -1,0 +1,132 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{geometry}
+\geometry{margin=1.5cm}
+
+\title{Computer Engineering -- Submission due 25.10.2020}
+\author{Jan Vogt, Yannik Köllmann - in gleichen Teilen}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Data Encodings}
+
+\subsection{Remote Access}
+
+\textbf{Tasks}
+
+\begin{enumerate}
+\item Run the three commands \texttt{whoami}, \texttt{hostname}, and \texttt{lscpu} on one of the systems.
+
+\textbf{whoami - Benutzerinformationen}
+
+\textbf{Person 1:}
+\begin{verbatim}
+ce42@elaine00:~$ whoami
+ce42
+\end{verbatim}
+
+\textbf{Person 2:}
+\begin{verbatim}
+ce43@elaine00:~$ whoami
+ce43
+\end{verbatim}
+
+\textbf{hostname - Rechnername}
+
+\begin{verbatim}
+ce42@elaine00:~$ hostname
+elaine00
+\end{verbatim}
+
+\textbf{lscpu - CPU-Informationen}
+
+\begin{verbatim}
+ce42@elaine00:~$ (lscpu | head -n 5; echo "---"; lscpu | tail -n 5)
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        48 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               24
+---
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
+\end{verbatim}
+
+\item Print the contents of the file \texttt{welcome.txt} in your home directory.
+
+\textbf{Inhalt von welcome.txt:}
+\begin{verbatim}
+Welcome to the Computer Engineering class! My waveform told a long story and 
+ended with 'It works.'
+\end{verbatim}
+
+\end{enumerate}
+
+\subsection{C/C++ Data Types}
+
+\textbf{Tasks}
+
+\begin{enumerate}
+\item Write C/C++ code to print the binary representations of the following variables. \begin{verbatim}(view ./src)\end{verbatim}
+\item For each of the variables, briefly explain why you obtained the resulting bits! (Siehe Erklärungen oben)
+
+\textbf{Binäre Repräsentationen:}
+
+\noindent
+\textbf{1: 1:} \texttt{00000001} -- Dezimalwert 1.
+
+\noindent
+\textbf{2: 255:} \texttt{11111111} -- Maximalwert für 8-bit unsigned char ($2^8 - 1$).
+
+\noindent
+\textbf{3: 255 + 1:} \texttt{00000000} -- Integer Overflow: 9. Bit wird abgeschnitten.
+
+\noindent
+\textbf{4: 0xA1:} \texttt{10100001} -- Hexadezimal: A = 1010, 1 = 0001.
+
+\noindent
+\textbf{5: 0b1001011:} \texttt{01001011} -- Binärliteral auf 8 Bits aufgefüllt.
+
+\noindent
+\textbf{6: 'H':} \texttt{01001000} -- ASCII-Wert 72.
+
+\noindent
+\textbf{7: -4:} \texttt{11111100} -- Zweierkomplement: +4 invertieren und +1.
+
+\noindent
+\textbf{8: 1u << 11:} \texttt{00000000000000000000100000000000} -- Linksshift der 1 (unsigned integer) um 11 Positionen ($2^{11}$).
+
+\noindent
+\textbf{9: l\_data8 << 21:} \texttt{00000000000000000000000000000000} -- Overflow: Bit auf Position 32.
+
+\noindent
+\textbf{10: 0xFFFFFFFF >> 5:} \texttt{00000111111111111111111111111111} -- Hexadezimalzahl - alle Bits sind 1. Rechtsshift um 5, linke Bits werden 0.
+
+\noindent
+\textbf{11: 0b1001 \^{} 0b01111:} \texttt{00000000000000000000000000000110} -- XOR: 01001 \^{} 01111 = 00110.
+
+\noindent
+\textbf{12: \~{}0b1001:} \texttt{11111111111111111111111111110110} -- NOT invertiert alle 32 Bits.
+
+\noindent
+\textbf{13: 0xF0 \& 0b1010101:} \texttt{00000000000000000000000001010000} -- AND: 11110000 \& 01010101 = 01010000.
+
+\noindent
+\textbf{14: 0b001 | 0b101:} \texttt{00000000000000000000000000000101} -- OR: 001 | 101 = 101.
+
+\noindent
+\textbf{15: 7743:} \texttt{00000000000000000001111000111111} -- Dezimal zu Binär.
+
+\noindent
+\textbf{16: -7743:} \texttt{11111111111111111110000111000001} -- Zweierkomplement: invertieren und +1.
+\end{enumerate}
+
+\end{document}
