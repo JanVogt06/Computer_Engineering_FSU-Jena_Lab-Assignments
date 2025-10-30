@@ -1,2 +1,10 @@
+.vscode
 .idea
 .DS_Store
+
+*.aux
+*.fbd_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
