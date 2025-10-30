@@ -5,7 +5,7 @@ module ripple_carry_adder_4_tb;
     logic [3:0] l_a, l_b, l_s;
     logic l_carry_in, l_carry_out;
 
-    ripple_carry_adder_4 dut (
+    ripple_carry_adder_4 dut(
         .i_a        (l_a),
         .i_b        (l_b),
         .i_carry_in (l_carry_in),
