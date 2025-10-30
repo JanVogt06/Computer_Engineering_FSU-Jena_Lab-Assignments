@@ -4,6 +4,8 @@
 \usepackage[ngerman]{babel}
 \usepackage{amsmath}
 \usepackage{geometry}
+\usepackage{circuitikz}
+\usepackage{tikz}
 \geometry{margin=1.5cm}
 
 \title{Computer Engineering -- Submission due 27.10.2020}
@@ -13,5 +15,89 @@
 \begin{document}
 
     \maketitle
+
+    \section{Combinational Building Blocks}
+
+    \subsection{Ripple-Carry Adder}
+
+    \textbf{Tasks}
+
+    \begin{enumerate}
+        \item Draw the schematic of the four-bit ripple-carry adder as a sequence of full adders.
+
+        \textbf{Lösung:}
+
+        Ein 4-Bit Ripple-Carry Adder besteht aus vier Full Adderns, die in Reihe geschaltet sind. Der Carry-Ausgang jedes Full Adders wird mit dem Carry-Eingang des nächsthöheren Full Adders verbunden.
+
+        \begin{center}
+        \begin{circuitikz}[scale=1.0, transform shape]
+            % Full Adder 0 (LSB)
+            \draw (0,0) node[draw, minimum width=2cm, minimum height=2.5cm, align=center] (FA0) {Full\\Adder\\0};
+            \draw (FA0.north) ++(0,0.3) node[above] {$S_0$};
+            \draw (FA0.west) ++(-0.3,0.5) node[left] {$A_0$};
+            \draw (FA0.west) ++(-0.3,-0.5) node[left] {$B_0$};
+            \draw (FA0.south) ++(0,-0.3) node[below] {$C_{in}$};
+            \draw (FA0.east) ++(0.3,0) node[right] {$C_0$};
+            
+            % Full Adder 1
+            \draw (4,0) node[draw, minimum width=2cm, minimum height=2.5cm, align=center] (FA1) {Full\\Adder\\1};
+            \draw (FA1.north) ++(0,0.3) node[above] {$S_1$};
+            \draw (FA1.west) ++(-0.3,0.5) node[left] {$A_1$};
+            \draw (FA1.west) ++(-0.3,-0.5) node[left] {$B_1$};
+            \draw (FA1.east) ++(0.3,0) node[right] {$C_1$};
+            
+            % Full Adder 2
+            \draw (8,0) node[draw, minimum width=2cm, minimum height=2.5cm, align=center] (FA2) {Full\\Adder\\2};
+            \draw (FA2.north) ++(0,0.3) node[above] {$S_2$};
+            \draw (FA2.west) ++(-0.3,0.5) node[left] {$A_2$};
+            \draw (FA2.west) ++(-0.3,-0.5) node[left] {$B_2$};
+            \draw (FA2.east) ++(0.3,0) node[right] {$C_2$};
+            
+            % Full Adder 3 (MSB)
+            \draw (12,0) node[draw, minimum width=2cm, minimum height=2.5cm, align=center] (FA3) {Full\\Adder\\3};
+            \draw (FA3.north) ++(0,0.3) node[above] {$S_3$};
+            \draw (FA3.west) ++(-0.3,0.5) node[left] {$A_3$};
+            \draw (FA3.west) ++(-0.3,-0.5) node[left] {$B_3$};
+            \draw (FA3.east) ++(0.3,0) node[right] {$C_{out}$};
+            
+            % Connections - Inputs A
+            \draw[->] (FA0.west) ++(-0.5,0.5) -- (FA0.west |- FA0.north west) ++ (0,-0.4);
+            \draw[->] (FA1.west) ++(-0.5,0.5) -- (FA1.west |- FA1.north west) ++ (0,-0.4);
+            \draw[->] (FA2.west) ++(-0.5,0.5) -- (FA2.west |- FA2.north west) ++ (0,-0.4);
+            \draw[->] (FA3.west) ++(-0.5,0.5) -- (FA3.west |- FA3.north west) ++ (0,-0.4);
+            
+            % Connections - Inputs B
+            \draw[->] (FA0.west) ++(-0.5,-0.5) -- (FA0.west |- FA0.south west) ++ (0,0.4);
+            \draw[->] (FA1.west) ++(-0.5,-0.5) -- (FA1.west |- FA1.south west) ++ (0,0.4);
+            \draw[->] (FA2.west) ++(-0.5,-0.5) -- (FA2.west |- FA2.south west) ++ (0,0.4);
+            \draw[->] (FA3.west) ++(-0.5,-0.5) -- (FA3.west |- FA3.south west) ++ (0,0.4);
+            
+            % Connections - Sum outputs
+            \draw[->] (FA0.north) -- ++(0,0.5);
+            \draw[->] (FA1.north) -- ++(0,0.5);
+            \draw[->] (FA2.north) -- ++(0,0.5);
+            \draw[->] (FA3.north) -- ++(0,0.5);
+            
+            % Connections - Carry chain
+            \draw[->] (FA0.south) -- ++(0,-0.5);
+            \draw[-] (FA0.east) -- ++(0.5,0) |- (FA1.south);
+            \draw[-] (FA1.east) -- ++(0.5,0) |- (FA2.south);
+            \draw[-] (FA2.east) -- ++(0.5,0) |- (FA3.south);
+            \draw[->] (FA3.east) -- ++(0.5,0);
+            
+        \end{circuitikz}
+        \end{center}
+
+        \textbf{Funktionsweise:}
+        \begin{itemize}
+            \item Jeder Full Adder addiert zwei Bits ($A_i$ und $B_i$) und einen Carry-Eingang ($C_{i-1}$).
+            \item Der Carry-Ausgang eines Full Adders wird als Carry-Eingang für den nächsten Full Adder verwendet.
+            \item Der erste Full Adder (FA0) erhält den initialen Carry-Eingang $C_{in}$ (meist 0).
+            \item Der letzte Full Adder (FA3) erzeugt den finalen Carry-Ausgang $C_{out}$.
+            \item Die Summen-Bits $S_3 S_2 S_1 S_0$ bilden das 4-Bit Ergebnis.
+        \end{itemize}
+
+        \textbf{Nachteil:} Die Verzögerung beträgt $t_{RCA} = N \cdot t_{FA}$, da der Carry durch alle $N$ Full Adder "ripple" (durchlaufen) muss.
+    \end{enumerate}
 
 \end{document}
