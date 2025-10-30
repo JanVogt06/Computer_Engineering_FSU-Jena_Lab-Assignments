@@ -4,8 +4,7 @@
 \usepackage[ngerman]{babel}
 \usepackage{amsmath}
 \usepackage{geometry}
-\usepackage{tikz}
-\usepackage{circuitikz}
+\usepackage{graphicx}
 \geometry{margin=1.5cm}
 
 \title{Computer Engineering -- Submission due 03.11.2020}
@@ -66,55 +65,7 @@
 Der 4-Bit Ripple-Carry Adder besteht aus vier kaskadierten Volladdierern (FA). Jeder Volladdierer addiert zwei Eingangsbits ($A_i$ und $B_i$) sowie den Carry-Eingang ($C_i$) und erzeugt ein Summenbit ($S_i$) sowie einen Carry-Ausgang, der zum nächsten Volladdierer weitergeleitet wird.
 
 \begin{center}
-\begin{tikzpicture}[scale=0.9]
-    % Full Adder 0
-    \draw (0,0) rectangle (2,2.5);
-    \node at (1,1.25) {\Large FA};
-    \node[above] at (0.5,2.5) {$A_0$};
-    \node[above] at (1.5,2.5) {$B_0$};
-    \draw[<-] (0.5,2.5) -- (0.5,2.8);
-    \draw[<-] (1.5,2.5) -- (1.5,2.8);
-    \draw[<-] (0,1.25) -- (-0.5,1.25) node[left] {$C_{in}$};
-    \node[below] at (1,0) {$S_0$};
-    \draw[->] (1,0) -- (1,-0.3);
-    \draw (2,1.25) -- (2.5,1.25) node[midway,above] {\small $C_0$};
-    
-    % Full Adder 1
-    \draw (3,0) rectangle (5,2.5);
-    \node at (4,1.25) {\Large FA};
-    \node[above] at (3.5,2.5) {$A_1$};
-    \node[above] at (4.5,2.5) {$B_1$};
-    \draw[<-] (3.5,2.5) -- (3.5,2.8);
-    \draw[<-] (4.5,2.5) -- (4.5,2.8);
-    \draw[<-] (3,1.25) -- (2.5,1.25);
-    \node[below] at (4,0) {$S_1$};
-    \draw[->] (4,0) -- (4,-0.3);
-    \draw (5,1.25) -- (5.5,1.25) node[midway,above] {\small $C_1$};
-    
-    % Full Adder 2
-    \draw (6,0) rectangle (8,2.5);
-    \node at (7,1.25) {\Large FA};
-    \node[above] at (6.5,2.5) {$A_2$};
-    \node[above] at (7.5,2.5) {$B_2$};
-    \draw[<-] (6.5,2.5) -- (6.5,2.8);
-    \draw[<-] (7.5,2.5) -- (7.5,2.8);
-    \draw[<-] (6,1.25) -- (5.5,1.25);
-    \node[below] at (7,0) {$S_2$};
-    \draw[->] (7,0) -- (7,-0.3);
-    \draw (8,1.25) -- (8.5,1.25) node[midway,above] {\small $C_2$};
-    
-    % Full Adder 3
-    \draw (9,0) rectangle (11,2.5);
-    \node at (10,1.25) {\Large FA};
-    \node[above] at (9.5,2.5) {$A_3$};
-    \node[above] at (10.5,2.5) {$B_3$};
-    \draw[<-] (9.5,2.5) -- (9.5,2.8);
-    \draw[<-] (10.5,2.5) -- (10.5,2.8);
-    \draw[<-] (9,1.25) -- (8.5,1.25);
-    \node[below] at (10,0) {$S_3$};
-    \draw[->] (10,0) -- (10,-0.3);
-    \draw[->] (11,1.25) -- (11.5,1.25) node[right] {$C_{out}$};
-\end{tikzpicture}
+\includegraphics[width=0.8\textwidth]{ripple_carry_adder.png}
 \end{center}
 
 \item Derive the total number of possible inputs for the four-bit ripple-carry adder! How would this change if we were to implement a 32-bit ripple-carry adder?
@@ -192,23 +143,23 @@ Gesamtzahl möglicher Eingangskombinationen:
 \begin{enumerate}
 \item Implement \texttt{cla\_pre\_4} (Fig. 3.4.1) and test with \texttt{cla\_pre\_4\_tb}.
 
-\begin{verbatim}(siehe ./src/task3.4/cla_pre_4.sv)\end{verbatim}
-\begin{verbatim}(siehe ./src/task3.4/cla_pre_4_tb.sv)\end{verbatim}
+\begin{verbatim}(siehe ./src/task3.4/cla_pre_4/cla_pre_4.sv)\end{verbatim}
+\begin{verbatim}(siehe ./src/task3.4/cla_pre_4/cla_pre_4_tb.sv)\end{verbatim}
 
 \item Implement \texttt{cla\_logic\_4} (Fig. 3.4.2) and test with \texttt{cla\_logic\_4\_tb}.
 
-\begin{verbatim}(siehe ./src/task3.4/cla_logic_4.sv)\end{verbatim}
-\begin{verbatim}(siehe ./src/task3.4/cla_logic_4_tb.sv)\end{verbatim}
+\begin{verbatim}(siehe ./src/task3.4/cla_logic_4/cla_logic_4.sv)\end{verbatim}
+\begin{verbatim}(siehe ./src/task3.4/cla_pre_4/cla_logic_4_tb.sv)\end{verbatim}
 
 \item Implement the 4-bit carry-lookahead block \texttt{cla\_block\_4} (Fig. 3.4.3). Use the two modules \texttt{cla\_pre\_4} and \texttt{cla\_logic\_4} in your design. Use the testbench \texttt{cla\_block\_4\_tb} for your tests.
 
-\begin{verbatim}(siehe ./src/task3.4/cla_block_4.sv)\end{verbatim}
-\begin{verbatim}(siehe ./src/task3.4/cla_block_4_tb.sv)\end{verbatim}
+\begin{verbatim}(siehe ./src/task3.4/cla_block_4/cla_block_4.sv)\end{verbatim}
+\begin{verbatim}(siehe ./src/task3.4/cla_block_4/cla_block_4_tb.sv)\end{verbatim}
 
 \item Implement a 64-bit carry-lookahead adder by chaining sixteen 4-bit carry-lookahead blocks (Fig. 3.4.4). Use the testbench \texttt{cla\_adder\_64\_tb}.
 
-\begin{verbatim}(siehe ./src/task3.4/cla_adder_64.sv)\end{verbatim}
-\begin{verbatim}(siehe ./src/task3.4/cla_adder_64_tb.sv)\end{verbatim}
+\begin{verbatim}(siehe ./src/task3.4/cla_adder_64/cla_adder_64.sv)\end{verbatim}
+\begin{verbatim}(siehe ./src/task3.4/cla_adder_64/cla_adder_64_tb.sv)\end{verbatim}
 \end{enumerate}
 
 \subsection{Delays}

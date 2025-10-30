@@ -1,0 +1,110 @@
+$date
+	Thu Oct 30 13:55:20 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module cla_logic_4_tb $end
+$var wire 1 ! l_p_out $end
+$var wire 1 " l_g_out $end
+$var reg 4 # l_g [3:0] $end
+$var reg 4 $ l_p [3:0] $end
+$scope module dut $end
+$var wire 4 % i_g [3:0] $end
+$var wire 4 & i_p [3:0] $end
+$var wire 1 " o_g $end
+$var wire 1 ! o_p $end
+$var wire 1 ' w1 $end
+$var wire 1 ( w2 $end
+$var wire 1 ) w3 $end
+$var wire 1 * w4 $end
+$var wire 1 + w5 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0+
+0*
+0)
+0(
+0'
+b0 &
+b0 %
+b0 $
+b0 #
+0"
+0!
+$end
+#10
+1"
+b1000 #
+b1000 %
+#20
+1!
+0"
+b1111 $
+b1111 &
+b0 #
+b0 %
+#30
+1)
+1+
+1'
+1(
+1*
+1"
+b1111 #
+b1111 %
+#40
+0!
+b1110 $
+b1110 &
+b1 #
+b1 %
+#50
+0'
+b1100 $
+b1100 &
+b10 #
+b10 %
+#60
+0)
+0(
+b1000 $
+b1000 &
+b100 #
+b100 %
+#70
+0"
+0+
+0*
+b0 $
+b0 &
+b1 #
+b1 %
+#80
+1*
+1)
+1(
+b100 $
+b100 &
+b10 #
+b10 %
+#90
+1"
+0)
+1+
+1'
+1(
+b1010 $
+b1010 &
+b101 #
+b101 %
+#100

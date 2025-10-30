@@ -1,0 +1,55 @@
+$date
+	Thu Oct 30 13:29:23 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module module_with_delays_tb $end
+$var wire 1 ! l_d $end
+$var reg 1 " l_a $end
+$var reg 1 # l_b $end
+$var reg 1 $ l_c $end
+$scope module dut $end
+$var wire 1 " i_a $end
+$var wire 1 # i_b $end
+$var wire 1 $ i_c $end
+$var wire 1 % l_x $end
+$var wire 1 & l_y $end
+$var wire 1 ' l_z $end
+$var wire 1 ! o_d $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+x'
+x&
+x%
+1$
+1#
+1"
+x!
+$end
+#3000
+0%
+1'
+#6000
+0&
+1!
+#10000
+0$
+#13000
+1%
+0'
+#16000
+1&
+0!
+#19000
+1!
+#20000
