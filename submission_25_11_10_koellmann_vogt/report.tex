@@ -1,0 +1,90 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{graphicx}
+\geometry{margin=1.5cm}
+
+\title{Computer Engineering -- Submission due 10.11.2025}
+\author{Jan Vogt, Yannik Köllmann - in gleichen Teilen}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Field Programmable Gate Arrays}
+
+\subsection{7-Segment Display Decoder}
+
+\textbf{Tasks}
+
+\begin{enumerate}
+    \item Add the missing encodings for the seven-segment display to Table 4.2.1.
+
+
+          \begin{table}[h]
+              \centering
+              \caption{Truth table of the decoder.}
+              \label{tab:decoder}
+              \begin{tabular}{|c|c|c|}
+                  \hline
+                  \textbf{Hex Number} & \textbf{SW[3:0]} & \textbf{HEX0[6:0]}    \\
+                  \hline
+                  0                   & \texttt{4'b0000} & \texttt{7'b100\_0000} \\
+                  1                   & \texttt{4'b0001} & \texttt{7'b111\_1001} \\
+                  2                   & \texttt{4'b0010} & \texttt{7'b010\_0100} \\
+                  3                   & \texttt{4'b0011} & \texttt{7'b011\_0000} \\
+                  4                   & \texttt{4'b0100} & \texttt{7'b001\_1001} \\
+                  5                   & \texttt{4'b0101} & \texttt{7'b001\_0010} \\
+                  6                   & \texttt{4'b0110} & \texttt{7'b000\_0010} \\
+                  7                   & \texttt{4'b0111} & \texttt{7'b111\_1000} \\
+                  8                   & \texttt{4'b1000} & \texttt{7'b000\_0000} \\
+                  9                   & \texttt{4'b1001} & \texttt{7'b001\_0000} \\
+                  A                   & \texttt{4'b1010} & \texttt{7'b000\_1000} \\
+                  B                   & \texttt{4'b1011} & \texttt{7'b000\_0011} \\
+                  C                   & \texttt{4'b1100} & \texttt{7'b100\_0110} \\
+                  D                   & \texttt{4'b1101} & \texttt{7'b010\_0001} \\
+                  E                   & \texttt{4'b1110} & \texttt{7'b000\_0110} \\
+                  F                   & \texttt{4'b1111} & \texttt{7'b000\_1110} \\
+                  \hline
+              \end{tabular}
+          \end{table}
+
+    \item Implement the module decoder. Use the template in Listing 4.2.1.
+
+          \begin{verbatim}(siehe ./src/task4.2/decoder.sv)\end{verbatim}
+
+    \item Finish the implementation of the module decoder\_de10\_lite. Use Listing 4.2.2’s template.
+
+          \begin{verbatim}(siehe ./src/task4.2/decoder_de10_lite.sv)\end{verbatim}
+
+    \item Make sure that the board shows the correct hexadecimal numbers in display HEX0 for all combinations of the switches SW0, SW1, SW2, SW3. Provide three pictures of the programmed FPGA for the hex numbers 7, B and E. One should see the hex display and the switches in your pictures. An example is given in Fig. 4.2.1.
+
+          \begin{verbatim}(siehe ./src/task4.2/images/hexnumbers7.png)\end{verbatim}
+          \begin{verbatim}(siehe ./src/task4.2/images/hexnumbersB.png)\end{verbatim}
+          \begin{verbatim}(siehe ./src/task4.2/images/hexnumbersE.png)\end{verbatim}
+
+\end{enumerate}
+
+\subsection{Tiny Calculator}
+
+\begin{enumerate}
+
+    \item Implement the module tiny\_calculator. Use the template in Listing 4.3.1 as a basis for your module. Use your four-bit ripple carry adder of Section 3.3 for the addition.
+
+          \begin{verbatim}(siehe ./src/task4.3/tiny_calculator.sv)\end{verbatim}
+
+    \item Add the testbench tiny\_calculator\_tb for your tiny\_calculator module. Check that your calculator produces the correct outputs, i.e. the bits HEX0[6:0], HEX1[6:0], HEX2[6:0], HEX3[6:0] for all inputs in Table 4.3.1.
+
+          \begin{verbatim}(siehe ./src/task4.3/tiny_calculator_tb.sv)\end{verbatim}
+
+    \item Make sure that the board’s displays show the correct hexadecimal numbers for the configurations in Table 4.3.1. Provide a picture for each of the five configurations.
+
+          \begin{verbatim}(siehe ./src/task4.3/images/*.png)\end{verbatim}
+
+\end{enumerate}
+
+\end{document}
