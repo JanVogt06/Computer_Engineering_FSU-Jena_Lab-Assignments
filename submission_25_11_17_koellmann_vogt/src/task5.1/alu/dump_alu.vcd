@@ -1,0 +1,249 @@
+$date
+	Thu Nov 13 16:48:23 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module alu_tb $end
+$var wire 8 ! l_result [7:0] $end
+$var wire 1 " l_carry_out $end
+$var parameter 32 # N $end
+$var reg 8 $ l_a [7:0] $end
+$var reg 2 % l_alu_ctrl [1:0] $end
+$var reg 8 & l_b [7:0] $end
+$scope module dut $end
+$var wire 8 ' i_a [7:0] $end
+$var wire 2 ( i_alu_ctrl [1:0] $end
+$var wire 8 ) i_b [7:0] $end
+$var wire 8 * l_and [7:0] $end
+$var wire 8 + l_or [7:0] $end
+$var wire 8 , o_result [7:0] $end
+$var wire 1 " o_carry_out $end
+$var wire 8 - l_mux_2_result [7:0] $end
+$var wire 8 . l_adder_result [7:0] $end
+$var parameter 32 / N $end
+$scope module adder_inst $end
+$var wire 8 0 i_a [7:0] $end
+$var wire 1 1 i_carry_in $end
+$var wire 8 2 o_s [7:0] $end
+$var wire 1 " o_carry_out $end
+$var wire 8 3 i_b [7:0] $end
+$var parameter 32 4 N $end
+$upscope $end
+$scope module mux_2_inst $end
+$var wire 8 5 i_in0 [7:0] $end
+$var wire 8 6 i_in1 [7:0] $end
+$var wire 1 7 i_s $end
+$var wire 8 8 o_out [7:0] $end
+$var parameter 32 9 N $end
+$upscope $end
+$scope module mux_4_inst $end
+$var wire 8 : i_in0 [7:0] $end
+$var wire 8 ; i_in1 [7:0] $end
+$var wire 8 < i_in2 [7:0] $end
+$var wire 8 = i_in3 [7:0] $end
+$var wire 2 > i_s [1:0] $end
+$var wire 8 ? o_out [7:0] $end
+$var wire 8 @ l_mux_low [7:0] $end
+$var wire 8 A l_mux_high [7:0] $end
+$var parameter 32 B N $end
+$scope module mux_final $end
+$var wire 1 C i_s $end
+$var wire 8 D o_out [7:0] $end
+$var wire 8 E i_in1 [7:0] $end
+$var wire 8 F i_in0 [7:0] $end
+$var parameter 32 G N $end
+$upscope $end
+$scope module mux_high $end
+$var wire 8 H i_in0 [7:0] $end
+$var wire 8 I i_in1 [7:0] $end
+$var wire 1 J i_s $end
+$var wire 8 K o_out [7:0] $end
+$var parameter 32 L N $end
+$upscope $end
+$scope module mux_low $end
+$var wire 8 M i_in0 [7:0] $end
+$var wire 8 N i_in1 [7:0] $end
+$var wire 1 O i_s $end
+$var wire 8 P o_out [7:0] $end
+$var parameter 32 Q N $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 Q
+b1000 L
+b1000 G
+b1000 B
+b1000 9
+b1000 4
+b1000 /
+b1000 #
+$end
+#0
+$dumpvars
+b0 P
+0O
+b0 N
+b0 M
+b0 K
+0J
+b0 I
+b0 H
+b0 F
+b0 E
+b0 D
+0C
+b0 A
+b0 @
+b0 ?
+b0 >
+b0 =
+b0 <
+b0 ;
+b0 :
+b0 8
+07
+b11111111 6
+b0 5
+b0 3
+b0 2
+01
+b0 0
+b0 .
+b0 -
+b0 ,
+b0 +
+b0 *
+b0 )
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+0"
+b0 !
+$end
+#10
+b1100010 !
+b1100010 ,
+b1100010 ?
+b1100010 D
+1"
+b10100101 A
+b10100101 E
+b10100101 K
+b1100010 @
+b1100010 F
+b1100010 P
+b1011010 6
+b10100101 -
+b10100101 3
+b10100101 8
+b10111101 +
+b10111101 =
+b10111101 I
+b10100101 *
+b10100101 <
+b10100101 H
+b1100010 .
+b1100010 2
+b1100010 :
+b1100010 ;
+b1100010 M
+b1100010 N
+b10100101 &
+b10100101 )
+b10100101 5
+b10111101 $
+b10111101 '
+b10111101 0
+#20
+b11000 !
+b11000 ,
+b11000 ?
+b11000 D
+b11000 @
+b11000 F
+b11000 P
+b1011010 -
+b1011010 3
+b1011010 8
+b11000 .
+b11000 2
+b11000 :
+b11000 ;
+b11000 M
+b11000 N
+b10111101 A
+b10111101 E
+b10111101 K
+17
+11
+1O
+1J
+b1 %
+b1 (
+b1 >
+#30
+b1100010 @
+b1100010 F
+b1100010 P
+b10100101 -
+b10100101 3
+b10100101 8
+b1100010 .
+b1100010 2
+b1100010 :
+b1100010 ;
+b1100010 M
+b1100010 N
+b10100101 A
+b10100101 E
+b10100101 K
+b10100101 !
+b10100101 ,
+b10100101 ?
+b10100101 D
+07
+01
+0O
+0J
+1C
+b10 %
+b10 (
+b10 >
+#40
+b11000 @
+b11000 F
+b11000 P
+b10111101 !
+b10111101 ,
+b10111101 ?
+b10111101 D
+b1011010 -
+b1011010 3
+b1011010 8
+b11000 .
+b11000 2
+b11000 :
+b11000 ;
+b11000 M
+b11000 N
+b10111101 A
+b10111101 E
+b10111101 K
+17
+11
+1O
+1J
+b11 %
+b11 (
+b11 >
+#50
