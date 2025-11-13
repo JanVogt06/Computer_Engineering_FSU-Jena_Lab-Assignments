@@ -38,18 +38,18 @@ module alu_de10_lite(
     );
 
     decoder decoder_hex0( 
-        .i_data    (l_a),
-        .o_segments(HEX0)
+        .i_binary_number    (l_a),
+        .o_display(HEX0)
     );
 
     decoder decoder_hex1( 
-        .i_data    (l_b),
-        .o_segments(HEX1)
+        .i_binary_number    (l_b),
+        .o_display(HEX1)
     );
 
     decoder decoder_hex2( 
-        .i_data    (l_result),
-        .o_segments(HEX2)
+        .i_binary_number    (l_result),
+        .o_display(HEX2)
     );
 
     // Wire LEDs
