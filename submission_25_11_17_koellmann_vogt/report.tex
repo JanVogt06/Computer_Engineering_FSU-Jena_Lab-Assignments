@@ -1,0 +1,144 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{graphicx}
+\geometry{margin=1.5cm}
+
+\title{Computer Engineering -- Submission due 17.11.2025}
+\author{Jan Vogt, Yannik Köllmann - in gleichen Teilen}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Arithmetic Logic Unit}
+
+\subsection{Designing a Basic ALU}
+
+\subsubsection{Building Blocks}
+
+\textbf{Tasks}
+
+\begin{enumerate}
+    \item Implement the module \texttt{adder} in the file \texttt{adder.sv}. Test your implementation in the testbench \texttt{adder\_tb} in the file \texttt{adder\_tb.sv}. Check at least three test cases!
+    
+    \begin{verbatim}(siehe ./src/task5.1/adder/adder.sv)\end{verbatim}
+    \begin{verbatim}(siehe ./src/task5.1/adder/adder_tb.sv)\end{verbatim}
+
+    \item Implement the module \texttt{mux\_2} in the file \texttt{mux\_2.sv}. Test your implementation in the testbench \texttt{mux\_2\_tb} in the file \texttt{mux\_2\_tb.sv}. Check at least three test cases!
+    
+    \begin{verbatim}(siehe ./src/task5.1/mux_2/mux_2.sv)\end{verbatim}
+    \begin{verbatim}(siehe ./src/task5.1/mux_2/mux_2_tb.sv)\end{verbatim}
+
+    \item Implement the module \texttt{mux\_4} in the file \texttt{mux\_4.sv}. Use the previously implemented module \texttt{mux\_2} in your implementation of \texttt{mux\_4}! Test your implementation in the testbench \texttt{mux\_4\_tb} in the file \texttt{mux\_4\_tb.sv}. Check at least three test cases!
+    
+    \begin{verbatim}(siehe ./src/task5.1/mux_4/mux_4.sv)\end{verbatim}
+    \begin{verbatim}(siehe ./src/task5.1/mux_4/mux_4_tb.sv)\end{verbatim}
+\end{enumerate}
+
+\subsubsection{Putting the Parts Together}
+
+\textbf{Tasks}
+
+\begin{enumerate}
+    \item Fill in the missing parts of Table 5.1.1.
+
+    \begin{table}[h]
+        \centering
+        \caption{Example inputs and outputs for our basic ALU.}
+        \label{tab:alu_basic}
+        \begin{tabular}{|c|c|c|c|c|}
+            \hline
+            \textbf{i\_a} & \textbf{i\_b} & \textbf{i\_alu\_ctrl} & \textbf{o\_result} & \textbf{o\_carry\_out} \\
+            \hline
+            \texttt{8'b0000\_0000} & \texttt{8'b0000\_0000} & \texttt{2'b00} & \texttt{8'b0000\_0000} & \texttt{1'b0} \\
+            \texttt{8'b1011\_1101} & \texttt{8'b1010\_0101} & \texttt{2'b00} & \texttt{8'b0110\_0010} & \texttt{1'b1} \\
+            \texttt{8'b1011\_1101} & \texttt{8'b1010\_0101} & \texttt{2'b01} & \texttt{8'b0001\_1000} & \texttt{1'b1} \\
+            \texttt{8'b1011\_1101} & \texttt{8'b1010\_0101} & \texttt{2'b10} & \texttt{8'b1010\_0101} & \texttt{1'b0} \\
+            \texttt{8'b1011\_1101} & \texttt{8'b1010\_0101} & \texttt{2'b11} & \texttt{8'b1011\_1101} & \texttt{1'b0} \\
+            \hline
+        \end{tabular}
+    \end{table}
+
+    \item Implement the module \texttt{alu} in the file \texttt{alu.sv}. Test your implementation in the testbench \texttt{alu\_tb} in the file \texttt{alu\_tb.sv}. Add respective tests for all examples in Table 5.1.1 to \texttt{alu\_tb}.
+    
+    \begin{verbatim}(siehe ./src/task5.1/alu/alu.sv)\end{verbatim}
+    \begin{verbatim}(siehe ./src/task5.1/alu/alu_tb.sv)\end{verbatim}
+
+    \item Generate a waveform plot illustrating the application of your ALU w.r.t. Table 5.1.1's inputs. Limit your plot to these inputs and change the input every 10 time units, i.e., visualize 50 time units. The plot shall show all inputs, i.e., \texttt{i\_a}, \texttt{i\_b} and \texttt{i\_alu\_ctrl}, and all outputs, i.e., \texttt{o\_result}, \texttt{o\_carry\_out}.
+    
+    \begin{verbatim}(siehe ./src/task5.1/alu/alu_tb_waveform.png)\end{verbatim}
+
+\end{enumerate}
+
+\subsection{Basic ALU in Practice}
+
+\textbf{Tasks}
+
+\begin{enumerate}
+    \item Implement the top-level module \texttt{alu\_de10\_lite}. Use the template in Listing 5.2.1.
+
+    \begin{verbatim}(siehe ./src/task5.2/alu_de10_lite.sv)\end{verbatim}
+
+    \item Compile your finished ALU in Quartus Prime and program the FPGA of a DE10-Lite board.
+
+    \begin{verbatim}(siehe ./src/task5.2/quartus_project/)\end{verbatim}
+
+    \item Make sure that the boards shows the correct results for the inputs in Table 5.2.1. Provide a picture of the board for each of the inputs.
+
+    \begin{verbatim}(siehe ./src/task5.2/images/config1.png)\end{verbatim}
+    \begin{verbatim}(siehe ./src/task5.2/images/config2.png)\end{verbatim}
+    \begin{verbatim}(siehe ./src/task5.2/images/config3.png)\end{verbatim}
+    \begin{verbatim}(siehe ./src/task5.2/images/config4.png)\end{verbatim}
+\end{enumerate}
+
+\subsection{NZCV-Extended ALU}
+
+\textbf{Tasks}
+
+\begin{enumerate}
+    \item Implement the module \texttt{xor\_3} in the file \texttt{xor\_3.sv}. Test your implementation in the testbench \texttt{xor\_3\_tb} in the file \texttt{xor\_3\_tb.sv}.
+
+    \begin{verbatim}(siehe ./src/task5.3/xor_3/xor_3.sv)\end{verbatim}
+    \begin{verbatim}(siehe ./src/task5.3/xor_3/xor_3_tb.sv)\end{verbatim}
+
+    \item Fill in the missing parts of Table 5.3.2.
+
+    \begin{table}[h]
+        \centering
+        \caption{Example inputs and outputs for our extended ALU.}
+        \label{tab:alu_nzcv}
+        \begin{tabular}{|c|c|c|c|c|}
+            \hline
+            \textbf{i\_a} & \textbf{i\_b} & \textbf{i\_alu\_ctrl} & \textbf{o\_result} & \textbf{o\_nzcv} \\
+            \hline
+            \texttt{32'h0000\_0000} & \texttt{32'h0000\_0000} & \texttt{2'b00} & \texttt{32'h0000\_0000} & \texttt{4'b0100} \\
+            \texttt{32'h0000\_0000} & \texttt{32'hffff\_ffff} & \texttt{2'b00} & \texttt{32'hffff\_ffff} & \texttt{4'b1000} \\
+            \texttt{32'h0000\_0001} & \texttt{32'hffff\_ffff} & \texttt{2'b00} & \texttt{32'h0000\_0000} & \texttt{4'b0110} \\
+            \texttt{32'h0000\_ffff} & \texttt{32'h0000\_0001} & \texttt{2'b00} & \texttt{32'h0001\_0000} & \texttt{4'b0000} \\
+            \texttt{32'h0000\_0000} & \texttt{32'h0000\_0000} & \texttt{2'b01} & \texttt{32'h0000\_0000} & \texttt{4'b0110} \\
+            \texttt{32'h0001\_0000} & \texttt{32'h0000\_0001} & \texttt{2'b01} & \texttt{32'h0000\_ffff} & \texttt{4'b0010} \\
+            \texttt{32'hffff\_ffff} & \texttt{32'hffff\_ffff} & \texttt{2'b10} & \texttt{32'hffff\_ffff} & \texttt{4'b1000} \\
+            \texttt{32'hffff\_ffff} & \texttt{32'h7743\_3477} & \texttt{2'b10} & \texttt{32'h7743\_3477} & \texttt{4'b0000} \\
+            \texttt{32'h0000\_0000} & \texttt{32'hffff\_ffff} & \texttt{2'b10} & \texttt{32'h0000\_0000} & \texttt{4'b0100} \\
+            \texttt{32'h0000\_0000} & \texttt{32'hffff\_ffff} & \texttt{2'b11} & \texttt{32'hffff\_ffff} & \texttt{4'b1000} \\
+            \hline
+        \end{tabular}
+    \end{table}
+
+    \item Implement the module \texttt{alu\_nzcv} in the file \texttt{alu\_nzcv.sv}. Test your implementation in the testbench \texttt{alu\_nzcv\_tb} in the file \texttt{alu\_nzcv\_tb.sv}. Add tests for the examples in Table 5.3.2 to \texttt{alu\_nzcv\_tb}.
+
+    \begin{verbatim}(siehe ./src/task5.3/alu_nzcv/alu_nzcv.sv)\end{verbatim}
+    \begin{verbatim}(siehe ./src/task5.3/alu_nzcv/alu_nzcv_tb.sv)\end{verbatim}
+
+    \item Generate a waveform plot illustrating the application of your extended ALU to Table 5.3.2's inputs. Apply each input for 10 time units and limit the plot to a total time of 100 time units. Visualize all inputs (\texttt{i\_a}, \texttt{i\_b} and \texttt{i\_alu\_ctrl}) and all outputs (\texttt{o\_result}, \texttt{o\_nzcv}).
+
+    \begin{verbatim}(siehe ./src/task5.3/alu_nzcv/alu_nzcv_waveform.png)\end{verbatim}
+
+\end{enumerate}
+
+\end{document}
