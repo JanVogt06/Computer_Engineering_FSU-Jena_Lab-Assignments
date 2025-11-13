@@ -44,14 +44,14 @@ module alu_tb;
         l_alu_ctrl = 2'b10;
         #10;
         assert (l_result === 8'b1010_0101);
-        assert (l_carry_out === 1'b0);
+        assert (l_carry_out === 1'b1);
 
         l_a = 8'b1011_1101;
         l_b = 8'b1010_0101;
         l_alu_ctrl = 2'b11;
         #10;
         assert (l_result === 8'b1011_1101);
-        assert (l_carry_out === 1'b0);
+        assert (l_carry_out === 1'b1);
 
         $finish;
     end
