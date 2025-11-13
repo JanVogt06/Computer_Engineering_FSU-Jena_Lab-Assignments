@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1763048812.80375 "/Users/janvogt/Desktop/Softwareprojekte/Computer_Engineering_FSU-Jena_Lab-Assignments/submission_25_11_17_koellmann_vogt/report.tex" "report.pdf" "report" 1763048813.15418 0
-  "/Users/janvogt/Desktop/Softwareprojekte/Computer_Engineering_FSU-Jena_Lab-Assignments/submission_25_11_17_koellmann_vogt/report.tex" 1763048812.59361 7516 31fb226aea90f652f87f54ffed740a06 ""
+["pdflatex"] 1763049284.63472 "/Users/janvogt/Desktop/Softwareprojekte/Computer_Engineering_FSU-Jena_Lab-Assignments/submission_25_11_17_koellmann_vogt/report.tex" "report.pdf" "report" 1763049284.96718 0
+  "/Users/janvogt/Desktop/Softwareprojekte/Computer_Engineering_FSU-Jena_Lab-Assignments/submission_25_11_17_koellmann_vogt/report.tex" 1763049284.10618 7535 7892daae2af7fd96e78a127e2f245329 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm" 1136768653 3584 21b378cca2e40816b0e6d74a4dc98f04 ""
@@ -51,6 +51,7 @@
   "/usr/local/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty" 1738182759 5048 0270515b828149155424600fd2d58ac5 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/base/size11.clo" 1738182759 8464 e73911cdcc738e82d6adccd28e654bb1 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/float/float.sty" 1137110151 6749 16d2656a1984957e674b149555f1ea1d ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty" 1578002852 41601 9cf6c5257b1bc7af01a58859749dd37a ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def" 1713382759 19440 9da9dcbb27470349a580fca7372d454b ""
@@ -64,8 +65,8 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1744894602 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1744894534 3345739 a9d08436ae3edd44ce50e3fe07048502 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "report.aux" 1763048813.10719 1242 f040698a1e5ec6e2261f57d10cffd015 "pdflatex"
-  "report.tex" 1763048812.59361 7516 31fb226aea90f652f87f54ffed740a06 ""
+  "report.aux" 1763049284.92541 1242 8e1b2026261ba4b041a7098d4aa76b73 "pdflatex"
+  "report.tex" 1763049284.10618 7535 7892daae2af7fd96e78a127e2f245329 ""
   (generated)
   "report.aux"
   "report.log"
