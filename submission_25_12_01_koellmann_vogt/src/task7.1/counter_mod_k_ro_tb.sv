@@ -2,7 +2,7 @@
  * Testbench of the modulo-k counter which has the rollover signal as output.
  **/
 module counter_mod_k_ro_tb;
-  parameter N = 4;
+  parameter N = 3;
   logic l_clk;
   logic l_reset;
 
@@ -24,13 +24,13 @@ module counter_mod_k_ro_tb;
 
   initial
     begin
-      i_clk = 0;
-      forever #5 i_clk = ~i_clk;
+      l_clk = 0;
+      forever #5 l_clk = ~l_clk;
     end
 
   initial
     begin
-      i_k = N;
+      l_k = N;
 
       #10;
       assert( l_roll_over == 1'b0 )
