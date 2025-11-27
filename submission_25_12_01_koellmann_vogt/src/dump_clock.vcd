@@ -1,0 +1,78 @@
+$date
+	Thu Nov 27 16:19:00 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module clock_tb $end
+$var wire 1 ! l_clk $end
+$var reg 1 " l_reset $end
+$var reg 1 # l_roll_over $end
+$scope module dut $end
+$var wire 1 " i_reset $end
+$var wire 1 # i_roll_over $end
+$var wire 1 ! o_clk $end
+$var reg 1 $ clk $end
+$upscope $end
+$upscope $end
+$scope module counter_mod_k_ro $end
+$var wire 1 % i_clk $end
+$var wire 8 & i_k [7:0] $end
+$var wire 1 ' i_reset $end
+$var wire 8 ( count [7:0] $end
+$var parameter 32 ) N $end
+$var reg 1 * o_roll_over $end
+$scope module counter_inst $end
+$var wire 1 % i_clk $end
+$var wire 8 + i_k [7:0] $end
+$var wire 1 ' i_reset $end
+$var wire 8 , o_count [7:0] $end
+$var parameter 32 - N $end
+$var reg 8 . count [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 -
+b1000 )
+$end
+#0
+$dumpvars
+bx .
+bx ,
+bz +
+x*
+bx (
+z'
+bz &
+z%
+1$
+0#
+1"
+1!
+$end
+#3
+0"
+#20
+0!
+0$
+1#
+#30
+0#
+#40
+1!
+1$
+1#
+#50
+0#
+#60
+0!
+0$
+1#
+#70
+0#
+#80
