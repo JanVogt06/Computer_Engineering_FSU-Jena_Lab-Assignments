@@ -30,7 +30,7 @@ module counter_mod_k_ro_tb;
 
   initial
     begin
-      l_k = N;
+      l_k = 4;
 
       #10;
       assert( l_roll_over == 1'b0 )
