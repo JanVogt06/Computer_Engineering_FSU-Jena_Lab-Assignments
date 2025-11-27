@@ -30,6 +30,9 @@ module counter_mod_k_ro_tb;
 
   initial
     begin
+      $dumpfile("dump_counter_mod_k_ro.vcd");
+      $dumpvars;
+
       l_k = 4;
 
       #10;
