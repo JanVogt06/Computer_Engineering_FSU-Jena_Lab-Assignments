@@ -1,0 +1,46 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\geometry{margin=1.5cm}
+
+\title{Computer Engineering -- Submission due 01.12.2025}
+\author{Jan Vogt, Yannik Köllmann - in gleichen Teilen}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+Alle Dateien in src zu finden.
+
+\section{Berechnung der k-Werte für Clock-Signale}
+
+Das \texttt{clock}-Modul togglet bei jeder positiven Flanke des Rollover-Signals. Ein vollständiger Taktzyklus benötigt daher 2 Rollovers. Mit $f_{\text{input}} = 50\,\text{MHz}$ gilt:
+
+\begin{equation}
+f_{\text{output}} = \frac{f_{\text{input}}}{2 \cdot k} \quad \Rightarrow \quad k = \frac{f_{\text{input}}}{2 \cdot f_{\text{output}}}
+\end{equation}
+
+\subsection{10 Hz Clock}
+\begin{equation}
+k_{10} = \frac{50.000.000}{2 \cdot 10} = \frac{50.000.000}{20} = 2.500.000
+\end{equation}
+Minimales $N$: $\lceil \log_2(2.500.000) \rceil = 22$ Bits
+
+\subsection{1 Hz Clock}
+\begin{equation}
+k_{1} = \frac{50.000.000}{2 \cdot 1} = \frac{50.000.000}{2} = 25.000.000
+\end{equation}
+Minimales $N$: $\lceil \log_2(25.000.000) \rceil = 25$ Bits
+
+\subsection{0.1 Hz Clock}
+\begin{equation}
+k_{0.1} = \frac{50.000.000}{2 \cdot 0{,}1} = \frac{50.000.000}{0{,}2} = 250.000.000
+\end{equation}
+Minimales $N$: $\lceil \log_2(250.000.000) \rceil = 28$ Bits
+
+\end{document}
